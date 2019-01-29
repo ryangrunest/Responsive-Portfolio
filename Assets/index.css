@@ -1,0 +1,257 @@
+
+/*Main*/
+html, body {
+	margin: 0%;
+	background-color: #99C0AA;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	height: 100%;
+}
+input:focus {
+	outline: 0;
+}
+textarea:focus {
+	outline: 0;
+}
+/*End Main*/
+
+
+/*Header CSS*/
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #173F40;
+	display: flex;
+	width: 100%;
+	height: 75px;
+	border-bottom: 1px solid #A7D6E3;
+}
+.header h1 {
+	background-color: #A7D6E3;
+	color: #173F40;
+	margin: 0%;
+	display: inline;
+	width: 220px;
+	height: 100%;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 300;
+	line-height: 75px;
+	letter-spacing: 0.5px;
+	margin-left: 15%;
+	
+}
+.nav-links {
+	display: inline;
+	margin: 25px 0;
+	text-decoration: none;
+	color: white;
+	padding: 0 15px;
+	border-right: 1px solid #99C0AA;
+}
+#first {
+	margin-left: 37%;
+}
+.nav-links:hover {
+	color: black;
+}
+#contact {
+	border: none;
+}
+
+.header::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*End Header CSS*/
+
+
+/*Content CSS*/
+.content {
+	float: left;
+	width: 70%;
+	margin-left: 15%;
+	background-color: white;
+	margin-top: 100px;
+	box-shadow: 3px 2px 10px 1px rgba(25, 25, 25, 0.3);
+	min-height: 100%;
+	margin-bottom: 75px;
+}
+h2 {
+	color: #A7D6E3;
+	padding: 3% 5%;
+	margin: 0%;
+	padding-bottom: 1%;
+	font-weight: 300;
+	text-align: left;
+}
+.content img {
+	display: inline;
+	float: left;
+	margin: 5%;
+	margin-top: 2%;
+	margin-right: 2%;
+	margin-bottom: 0;
+	width: 200px;
+	height: auto;
+}
+.content hr {
+	border-top: 1px solid gray;
+	margin: 0% 5%;
+}
+.content p {
+	margin: 2% 5%;
+}
+
+.content:after {
+	content: "";
+	display: block;
+}
+/*End Content CSS*/
+
+
+
+/*Portfolio*/
+.portfolio-content {
+	width: 70%;
+	height: 100%;
+	margin: 2% 15%;
+	background-color: white;
+	margin-bottom: 200px;
+	margin-top: 100px;
+	padding-bottom: 5%;
+	text-align: center;
+	box-shadow: 3px 2px 10px 1px rgba(25, 25, 25, 0.3);
+}
+
+.portfolio-content hr {
+	border-top: 1px solid gray;
+	margin: 0% 5%;
+	margin-bottom: 2%;
+
+}
+.image {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin: 1%;
+	padding: 0;
+	box-shadow: 3px 2px 10px 1px rgba(25, 25, 25, 0.3);
+	/*padding-top: 2%;*/
+}
+.image img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	overflow: hidden;
+}
+#label {
+	position: absolute;
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #A7D6E3;
+	color: #173F40;
+	padding: 0;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+/*End Portfolio*/
+
+/*Form CSS*/
+form {
+	padding: 2% 5%;
+}
+#input {
+	width: 98%;
+	margin-bottom: 2%;
+	margin-top: 4px;
+	padding: 0.5% 1%;
+	border: 1px solid gray;
+}
+textarea {
+	width: 100%;
+	margin-bottom: 2%;
+	margin-top: 4px;
+	border: 1px solid gray;
+}
+#button {
+	border: 0px solid black;
+	color: white;
+	background-color: #173F40;
+	width: 5rem;
+	height: 2rem;
+	border-radius: 5px;
+}
+/*End Form CSS*/
+/*Footer CSS*/
+.footer {
+	position: fixed;
+	height: 75px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #173F40;
+	color: white;
+	text-align: center;
+}
+.footer hr {
+	margin: 0%;
+	border: 3px solid #A7D6E3;
+}
+.footer footer {
+	height: 50px;
+}
+.footer p {
+	margin: 0;
+	line-height: 75px;
+	/*position: fixed;*/
+	bottom: 0;
+	text-align: center;
+	font-size: 20px;
+}
+/*End Footer CSS*/
+
+
+
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1200px) {
+	.header {
+		width: 100%;
+		padding: 0;
+	}
+	.header h1 {
+		width: 150px;
+	}
+	.header #header {
+		float: left;
+		margin-left: 5%;
+		font-size: 20px;
+	}
+	.nav-links {
+		float: right;
+		margin-right: 5px;
+	}
+	.content {
+		margin-left: 5%;
+		width: 600px;
+	}
+	#first {
+		display: inline-flex;
+		float: right;
+	}
+/*	.header:after {
+		float: right;
+		margin-right: 0px;
+		width: 0px;
+	}*/
+
+}
