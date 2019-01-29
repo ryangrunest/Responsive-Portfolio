@@ -23,7 +23,7 @@ textarea:focus {
 	left: 0;
 	z-index: 1;
 	background: #173F40;
-	display: flex;
+	display: inline-flex;
 	width: 100%;
 	height: 75px;
 	border-bottom: 1px solid #A7D6E3;
@@ -32,7 +32,6 @@ textarea:focus {
 	background-color: #A7D6E3;
 	color: #173F40;
 	margin: 0%;
-	display: inline;
 	width: 220px;
 	height: 100%;
 	text-align: center;
@@ -49,10 +48,11 @@ textarea:focus {
 	text-decoration: none;
 	color: white;
 	padding: 0 15px;
-	border-right: 1px solid #99C0AA;
+	border-left: 1px solid #99C0AA;
 }
 #first {
 	margin-left: 37%;
+	border: none;
 }
 .nav-links:hover {
 	color: black;
@@ -77,7 +77,7 @@ textarea:focus {
 	background-color: white;
 	margin-top: 100px;
 	box-shadow: 3px 2px 10px 1px rgba(25, 25, 25, 0.3);
-	min-height: 100%;
+	min-height: 70%;
 	margin-bottom: 75px;
 }
 h2 {
@@ -189,6 +189,7 @@ textarea {
 	border-radius: 5px;
 }
 /*End Form CSS*/
+
 /*Footer CSS*/
 .footer {
 	position: fixed;
@@ -236,22 +237,8 @@ textarea {
 		margin-left: 5%;
 		font-size: 20px;
 	}
-	.nav-links {
-		float: right;
-		margin-right: 5px;
-	}
 	.content {
 		margin-left: 5%;
 		width: 600px;
 	}
-	#first {
-		display: inline-flex;
-		float: right;
-	}
-/*	.header:after {
-		float: right;
-		margin-right: 0px;
-		width: 0px;
-	}*/
-
 }
